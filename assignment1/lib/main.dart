@@ -4,6 +4,7 @@
 // 3) Split the app into three widgets: App, TextControl & Text
 
 import 'package:flutter/material.dart';
+import './text_control.dart';
 
 //1つしか関数を使ってない時に使える
 void main() => runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(appBar: AppBar(title: Text('assignment'))));
+        home: Scaffold(
+            appBar: AppBar(title: Text('assignment')), body: TextControl()));
   }
 }
